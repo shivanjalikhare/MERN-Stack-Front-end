@@ -21,11 +21,10 @@ import ManagementPage from "./components/pages/ManagementPage";
 import termsandconditions from "./components/pages/termsandconditions";
 import privacypolicy from "./components/pages/privacypolicy";
 
-
 const App = ({ location, isAuthenticated }) => (
   <div className="ui container">
     {isAuthenticated && <TopNavigation />}
-    <Route location={location} path="/" exact component={HomePage} />
+    <Route location={location} path="/homepage" exact component={HomePage} />
     <Route
       location={location}
       path="/confirmation/:token"
@@ -59,7 +58,7 @@ const App = ({ location, isAuthenticated }) => (
     />
     <Route
     location={location}
-    path="/homepage"
+    path="/"
     exact
     component={NewBookPage}
   />

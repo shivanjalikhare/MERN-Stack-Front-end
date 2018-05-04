@@ -17,7 +17,7 @@ export default class MenuExampleInverted extends Component {
           <div className="ui inverted secondary pointing menu">
 
             <a className=" item">
-              <Link to="/homepage">Home</Link>
+              <Link to="/">Home</Link>
             </a>
             <a  className='item' >
               <Link to="/aboutus">About us</Link>
