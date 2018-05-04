@@ -1,3 +1,6 @@
+/* Home page content */
+
+
 /* eslint-disable max-len */
 import React from "react";
 import MenuExampleInverted from "./navbar";
@@ -33,7 +36,7 @@ export default class homepagenew extends React.Component {
           <div style={{marginLeft:"-280px", width:"1690px"}} >
             <DemoCarousel />
           </div>
-          <AboutUsText />
+
         </div>
 
         <homepagenewtext />
