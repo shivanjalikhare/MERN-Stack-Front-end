@@ -15,6 +15,9 @@ import GuestRoute from "./components/routes/GuestRoute";
 import TopNavigation from "./components/navigation/TopNavigation";
 import AboutUsPage from "./components/pages/AboutUsPage";
 import TrusteesPage from "./components/pages/TrusteesPage";
+import ContactUsPage from "./components/pages/ContactUsPage";
+import ResearchPage from "./components/pages/ResearchPage";
+import ManagementPage from "./components/pages/ManagementPage";
 
 const App = ({ location, isAuthenticated }) => (
   <div className="ui container">
@@ -68,6 +71,24 @@ const App = ({ location, isAuthenticated }) => (
       path="/trustees"
       exact
       component={TrusteesPage}
+    />
+    <Route
+    location={location}
+    path="/contactus"
+    exact
+    component={ContactUsPage}
+  />
+    <Route
+      location={location}
+      path="/research"
+      exact
+      component={ResearchPage}
+    />
+    <Route
+      location={location}
+      path="/management"
+      exact
+      component={ManagementPage}
     />
   </div>
 );
