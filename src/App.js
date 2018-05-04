@@ -13,6 +13,7 @@ import NewBookPage from "./components/pages/NewBookPage";
 import UserRoute from "./components/routes/UserRoute";
 import GuestRoute from "./components/routes/GuestRoute";
 import TopNavigation from "./components/navigation/TopNavigation";
+import AboutUsPage from "./components/pages/AboutUsPage";
 
 const App = ({ location, isAuthenticated }) => (
   <div className="ui container">
@@ -50,12 +51,17 @@ const App = ({ location, isAuthenticated }) => (
       component={DashboardPage}
     />
     <Route
+    location={location}
+    path="/homepage"
+    exact
+    component={NewBookPage}
+  />
+    <Route
       location={location}
-      path="/homepage"
+      path="/aboutus"
       exact
-      component={NewBookPage}
+      component={AboutUsPage}
     />
-
   </div>
 );
 
