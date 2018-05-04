@@ -19,6 +19,8 @@ import ContactUsPage from "./components/pages/ContactUsPage";
 import ResearchPage from "./components/pages/ResearchPage";
 import ManagementPage from "./components/pages/ManagementPage";
 import termsandconditions from "./components/pages/termsandconditions";
+import privacypolicy from "./components/pages/privacypolicy";
+
 
 const App = ({ location, isAuthenticated }) => (
   <div className="ui container">
@@ -96,6 +98,12 @@ const App = ({ location, isAuthenticated }) => (
       path="/termsandconditions"
       exact
       component={termsandconditions}
+    />
+    <Route
+      location={location}
+      path="/privacypolicy"
+      exact
+      component={privacypolicy}
     />
   </div>
 );
